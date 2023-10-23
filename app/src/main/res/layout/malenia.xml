@@ -3,24 +3,70 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#A9BCD0"
+    android:backgroundTint="#A9BCD0">
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="412dp"
+        android:layout_height="233dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="324dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/malenia"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-16dp" />
+        tools:layout_editor_absoluteX="1dp" />
 
-    <Button
+    <ImageButton
         android:id="@+id/backMalenia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#A2783B"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.806" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <ImageButton
+        android:id="@+id/basura1"
+        android:layout_width="383dp"
+        android:layout_height="32dp"
+        android:background="#A2783B"
+        android:tint="#A2783B"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="411dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="116dp"
+        android:autoText="false"
+        android:background="#373F51"
+        android:foregroundGravity="center_vertical|clip_horizontal|center_horizontal"
+        android:text="Malenia, Blade of Miquela"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="363dp"
+        android:layout_height="94dp"
+        android:text="Malenia, la Espada de Miquella, también conocida como Malenia la Cercenada, fue una semidiosa y una Empírea que heredó una de las Grandes Runas. Durante la Devastación se enfrentó a sus hermanos por el control de las Tierras Intermedias."
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="417dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
